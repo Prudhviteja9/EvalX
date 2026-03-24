@@ -1,0 +1,26 @@
+# FastAPI = creates our web API
+# Like a WAITER - takes requests from users, brings back responses
+fastapi==0.115.0
+uvicorn==0.30.0
+
+# Talks to LLMs (the AI models we're testing)
+openai==1.82.0
+anthropic==0.52.0
+
+# Data handling
+pandas==2.2.2
+python-dotenv==1.0.1
+
+# Evaluation (grading AI answers)
+rouge-score==0.1.2
+
+# Dashboard (beautiful charts in browser)
+streamlit==1.36.0
+plotly==5.22.0
+
+# PDF report generation
+fpdf2==2.7.9
+
+# Testing
+pytest==8.2.0
+httpx==0.27.0

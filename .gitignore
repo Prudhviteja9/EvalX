@@ -1,0 +1,18 @@
+# Your API keys - NEVER push to GitHub (like your bank PIN)
+.env
+
+# Python auto-generated junk files (like food crumbs - not needed)
+__pycache__/
+*.pyc
+
+# Virtual environment (your local Python setup - too big to share)
+venv/
+.venv/
+
+# IDE settings (your personal editor settings)
+.vscode/
+.idea/
+
+# OS junk files
+Thumbs.db
+reports/

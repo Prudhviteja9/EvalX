@@ -1,0 +1,55 @@
+{
+  "name": "General Knowledge Benchmark",
+  "test_cases": [
+    {
+      "question": "What is the largest planet in our solar system?",
+      "expected_answer": "Jupiter",
+      "category": "science"
+    },
+    {
+      "question": "What is the square root of 144?",
+      "expected_answer": "12",
+      "category": "math"
+    },
+    {
+      "question": "Who is the author of Harry Potter?",
+      "expected_answer": "J.K. Rowling",
+      "category": "literature"
+    },
+    {
+      "question": "What is the currency of Japan?",
+      "expected_answer": "Yen",
+      "category": "geography"
+    },
+    {
+      "question": "What does CPU stand for?",
+      "expected_answer": "Central Processing Unit",
+      "category": "technology"
+    },
+    {
+      "question": "What is the boiling point of water in Celsius?",
+      "expected_answer": "100",
+      "category": "science"
+    },
+    {
+      "question": "Who developed the theory of relativity?",
+      "expected_answer": "Albert Einstein",
+      "category": "science"
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "expected_answer": "Pacific Ocean",
+      "category": "geography"
+    },
+    {
+      "question": "What programming language is known as the language of the web?",
+      "expected_answer": "JavaScript",
+      "category": "technology"
+    },
+    {
+      "question": "How many continents are there?",
+      "expected_answer": "7",
+      "category": "geography"
+    }
+  ]
+}
