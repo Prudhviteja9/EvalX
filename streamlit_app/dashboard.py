@@ -49,8 +49,25 @@ st.markdown("Test and compare AI models side-by-side with real metrics.")
 st.markdown("---")
 
 # --- SIDEBAR (left panel) ---
-# Like the settings panel on the left side
 st.sidebar.header("Settings")
+
+# API Key input — user enters their own key
+api_key = st.sidebar.text_input(
+    "OpenAI API Key",
+    type="password",
+    placeholder="sk-proj-...",
+    help="Enter your OpenAI API key. Get one at platform.openai.com",
+)
+
+# If key entered, set it so our code can use it
+if api_key:
+    import os
+    os.environ["OPENAI_API_KEY"] = api_key
+    st.sidebar.success("API key set!")
+else:
+    st.sidebar.warning("Enter your OpenAI API key to run evaluations.")
+
+st.sidebar.markdown("---")
 
 # Let user pick which models to test
 available_models = list(SUPPORTED_MODELS.keys())

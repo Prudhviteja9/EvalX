@@ -34,12 +34,21 @@ class LLMClient:
         Set up the connection to OpenAI.
         Like dialing a phone number before you can talk.
         """
+        # Check Streamlit secrets first, then environment variable
         api_key = os.getenv("OPENAI_API_KEY")
+
+        # Also check Streamlit secrets (for cloud deployment)
+        if not api_key:
+            try:
+                import streamlit as st
+                api_key = st.secrets.get("OPENAI_API_KEY")
+            except Exception:
+                pass
 
         if not api_key:
             raise ValueError(
                 "No OpenAI API key found! "
-                "Put your key in the .env file: OPENAI_API_KEY=sk-..."
+                "Enter your key in the sidebar or set OPENAI_API_KEY in .env"
             )
 
         # Create the OpenAI client (our "phone connection" to GPT)
