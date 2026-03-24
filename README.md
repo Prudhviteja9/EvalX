@@ -4,7 +4,7 @@ Test and compare AI models (GPT-4, Claude, Llama) side-by-side with real metrics
 
 ## Live Demo
 
-[Live Dashboard](https://evalx-prudhviteja.streamlit.app) | [API Docs](https://evalx-prudhviteja.streamlit.app)
+[Live Dashboard](https://evalx-llm.streamlit.app) | [GitHub Repo](https://github.com/Prudhviteja9/EvalX)
 
 ## Architecture
 
